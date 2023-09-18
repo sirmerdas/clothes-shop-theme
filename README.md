@@ -14,6 +14,8 @@
 
 ---
 
+![](src/images/ltr.png)
+
 Looking for a simple online shop theme? This theme will definitely math your needs :heart_eyes:.
 Take a look at online demo at here :point_down: :
 
@@ -44,7 +46,7 @@ Features :
 
 # Creator :man_technologist:
 
-- [sirmerdas](https://sirmerdas.ir)
+- [sirmerdas](https://sirmerdas.ir) | sirmerdas@gmail.com
 
 # Notice :warning:
 

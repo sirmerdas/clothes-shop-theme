@@ -6,7 +6,7 @@
 
 <!-- ! Badges  -->
 
-![GITHUB LICENSE](https://img.shields.io/github/license/SirMERDAS/clothes-shop-theme) ![GITHUB version](https://img.shields.io/github/v/release/SirMERDAS/clothes-shop-theme)
+
 
 # Introduction :dizzy:
 

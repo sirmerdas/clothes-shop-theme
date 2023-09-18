@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce theme</title>
+    <link rel="stylesheet" href="src/styles/bootstrap.min.css" />
+    <style>
+      @font-face {
+        font-family: "VazirMatn";
+        src: url(src/Vazirmatn-FD-Regular.woff2);
+      }
+      :root {
+        --main-color: #0b0909;
+        --secondary-color: #f0f0f0;
+        --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.3) !important;
+        --box-shadow-main: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      }
+      .link-item {
+        background-color: var(--main-color);
+        transition: 0.5s all ease;
+      }
+      a > h1 {
+        color: var(--secondary-color) !important;
+      }
+      a {
+        transition: 0.2s all ease;
+      }
+      .font-fa {
+        font-family: "VazirMatn" !important;
+      }
+
+      .link-item:hover {
+        background-color: rgba(11, 9, 9, 0.8);
+        box-shadow: var(--box-shadow-lg) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container justify-content-center py-5">
+      <div
+        class="row justify-content-center flex-column align-items-center px-3"
+      >
+        <div class="col-12 text-center">
+          <h1 class="my-2">Welcome. select any version you want:</h1>
+          <h1 class="font-fa my-2" style="direction: rtl">
+            خوش آمدید. نسخه مورد نظر خودتون رو انتخاب کنید:
+          </h1>
+        </div>
+        <div
+          class="col-md-4 d-flex flex-column justify-content-center link-item my-3 rounded-4 shadow-sm p-3"
+        >
+          <a href="ltr/" class="text-decoration-none text-white"
+            ><img src="src/images/ltr.png" class="img-fluid" alt="ltr" />
+            <h1 class="text-center my-2">Ltr version</h1></a
+          >
+        </div>
+        <div
+          class="col-md-4 d-flex flex-column justify-content-center link-item my-3 rounded-4 shadow-sm p-3"
+        >
+          <a href="rtl/" class="text-decoration-none text-white">
+            <img src="src/images/rtl.png" class="img-fluid" alt="rtl" />
+            <h1 class="text-center my-2">Rtl version</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

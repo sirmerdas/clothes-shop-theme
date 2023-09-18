@@ -1,0 +1,409 @@
+@font-face {
+  font-family: VazirMatn;
+  src: url("../fonts/Vazirmatn-FD-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --main-color: #0b0909;
+  --secondary-color: #f0f0f0;
+  --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.3) !important;
+  --box-shadow-main: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+  box-shadow: inset 0 0 5px grey;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(11, 9, 9, 0.5);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(11, 9, 9, 0.9);
+}
+* {
+  transition: 0.5s all ease;
+}
+body {
+  font-family: "VazirMatn", sans-serif !important;
+  overflow-y: auto !important;
+  overflow: hidden;
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+.header-notice {
+  background-color: var(--main-color);
+  color: rgba(255, 255, 255, 0.7);
+}
+.pointer-cursor {
+  cursor: pointer;
+}
+.main-menu-link:hover::after {
+  width: 100%;
+  transition: 0.5s all ease !important;
+}
+.main-menu-link::after {
+  content: " ";
+  transition: 0.5s all ease !important;
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: var(--main-color);
+  right: 50%;
+  transform: translateX(50%);
+}
+.bg-alternative {
+  background-color: var(--secondary-color) !important;
+}
+
+.hero {
+  height: 80vh;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-btn {
+  background-color: var(--main-color) !important;
+}
+.header-menu-list {
+  display: inline;
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+}
+.hero-main-img {
+  width: 100%;
+  background-image: url("../images/background/main-bg.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.hero-main-img:hover {
+  background-size: 110%;
+}
+.mobile-menu-active {
+  right: 0 !important;
+}
+.mobile-menu {
+  top: 0;
+  right: -100%;
+  height: 100%;
+  z-index: 999;
+}
+.main-mobile-menu > ul {
+  list-style: none;
+}
+.search-form-main {
+  background-color: #f0f0f0;
+}
+.search-form-main > i {
+  transform: rotateY(180deg);
+}
+.customer-testimonial {
+  flex-wrap: nowrap !important;
+  overflow-x: hidden !important;
+}
+
+.product-row {
+  flex-wrap: nowrap !important;
+  user-select: none !important;
+}
+.brand-menu {
+  background-color: var(--main-color);
+}
+.search-form:focus {
+  border: 0 !important;
+  outline: none !important;
+}
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.search-form {
+  display: inline;
+  width: 95%;
+  background-color: transparent;
+}
+input[type="search"] {
+  background-color: var(--secondary-color) !important;
+}
+.header-menu-list > li {
+  display: inline;
+}
+
+.product-container:hover {
+  box-shadow: var(--box-shadow-lg);
+}
+.btn:hover {
+  box-shadow: var(--box-shadow-lg);
+}
+.browse-container {
+  background-color: var(--secondary-color);
+}
+.bi-star-half {
+  transform: rotateY(180deg);
+  display: inline-block;
+}
+.browse-clothes {
+  height: 20vh;
+
+  background-size: cover;
+  transition: 0.5s all ease;
+}
+.browse-clothes:hover {
+  box-shadow: var(--box-shadow-main);
+  transition: 0.5s all ease;
+}
+.casual {
+  background-image: url("../images/background/casual.jpg");
+}
+.formal {
+  background-image: url("../images/background/formal.jpg");
+  background-position-y: 40%;
+}
+.party {
+  background-image: url("../images/background/wedding.jpg");
+  background-position-y: 98%;
+}
+.gym {
+  background-image: url("../images/background/gym.jpg");
+}
+.user-comment {
+  height: 100%;
+  user-select: none;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: 0.2s all ease !important;
+}
+.social-icon:hover {
+  color: #ffffff !important;
+  background-color: var(--main-color) !important;
+  transition: 0.2s all ease !important;
+}
+footer {
+  background-color: #f0f0f0;
+}
+.newsletter {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 50%,
+    var(--secondary-color) 50%
+  );
+}
+.newsletter > div {
+  background-color: var(--main-color);
+}
+.footer-links > ul > li > a:hover {
+  color: var(--main-color) !important;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.close-menu {
+  background-color: var(--main-color) !important;
+}
+.preloader-hide {
+  opacity: 0;
+  transition: 0.9s all ease;
+}
+.cart-item-controller {
+  background-color: var(--secondary-color);
+}
+.cart-item:nth-child(even) {
+  border-bottom: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color) !important;
+  border-top: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color) !important;
+}
+.main-input {
+  background-color: var(--secondary-color);
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.main-input:focus {
+  box-shadow: var(--box-shadow-main);
+}
+.coupon-input {
+  background-color: var(--secondary-color);
+}
+.coupon-input > div > input {
+  background: transparent;
+}
+.coupon-input > div > input:focus {
+  border: none;
+  outline: none;
+}
+.hover:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.price,
+.price > * {
+  transition: 0.5s all ease;
+}
+.filter-menu-item > div:nth-child(2) {
+  height: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.filter-active {
+  height: 120px !important;
+  transition: 0.5s all ease;
+}
+.filter-active:has(.color-menu) {
+  height: 100px !important;
+}
+.filter-active:has(.size-menu) {
+  height: 200px !important;
+}
+.filter-active:has(.style-menu) {
+  height: 250px !important;
+}
+.bi-chevron-down {
+  display: inline-block;
+  transition: 0.5s all ease;
+}
+
+.filter-menu-item:has(div.filter-active) .bi-chevron-down {
+  transform: rotateZ(-180deg);
+}
+.color-selector {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.shop-bg-filter {
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 990;
+  filter: blur(10px);
+}
+.shop-filter-active {
+  opacity: 1;
+  visibility: visible;
+}
+.sort-menu > div {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+.sort-menu:hover > div {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translateX(12px);
+}
+.noUi-handle {
+  border-radius: 50% !important;
+  width: 28px !important;
+  top: -10px !important;
+  background-color: var(--main-color) !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.noUi-horizontal .noUi-tooltip {
+  bottom: auto !important;
+}
+.noUi-tooltip {
+  border: none !important;
+}
+.noUi-connect {
+  background-color: var(--main-color) !important;
+}
+.noUi-horizontal {
+  height: 10px !important;
+}
+.noUi-handle::before,
+.noUi-handle::after {
+  display: none !important;
+}
+.product-image {
+  transform: scale(1.1);
+}
+.main-product-img {
+  background-image: url("../images/products/t-shirt-1.png");
+  background-size: cover;
+  cursor: zoom-in;
+  transition: none !important;
+}
+.main-product-img img:hover {
+  opacity: 0;
+}
+.pane-active {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-black-rgb), var(--bs-border-opacity)) !important;
+  border-width: 3px !important;
+}
+
+.main-product-img img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+}
+.gallery-img-item {
+  animation: changeImageAnimation 0.5s ease 1;
+}
+.tab-panel-controller:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.tab-panel-controller {
+  transition: none;
+}
+
+@media (max-width: 768px) {
+  .hero-main-img {
+    background-size: 130% !important;
+    background-position-y: -68% !important;
+  }
+}
+@media (max-width: 992px) {
+  .filter-menu-container {
+    display: block !important;
+    height: 89vh;
+    position: absolute;
+    bottom: -100%;
+    box-shadow: var(--box-shadow-main);
+    right: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 999;
+    visibility: hidden;
+  }
+  .filter-menu-container-active {
+    bottom: 10px;
+    visibility: visible;
+  }
+}
+
+@keyframes changeImageAnimation {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+@keyframes deleteCartAnimation {
+  0% {
+    right: 0%;
+    background-color: #ffffff;
+  }
+  50% {
+    right: 0%;
+    background-color: rgba(251, 52, 73, 0.5);
+  }
+  100% {
+    right: -120%;
+    background-color: rgba(251, 52, 73, 0.5);
+  }
+}

@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه اینترنتی | خانه</title>
+
+    <style>
+      .main-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #f0f0f0;
+        height: 100%;
+        z-index: 999;
+      }
+      .loader {
+        width: 150px;
+        height: 150px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #0b0909;
+        border-left: 10px solid #0b0909;
+        border-radius: 50%;
+        animation: loaderSpin 1s ease infinite;
+      }
+      @keyframes loaderSpin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/bootstrap.min.css" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="src/styles/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <div class="main-preloader">
+      <div class="loader"></div>
+    </div>
+
+    <div class="container-fluid p-0">
+      <div class="header-notice w-100 d-flex py-2 fs-6 position-relative">
+        <div class="text-center flex-grow-1">
+          ثبت نام کنید و تا 30% برای اولین سفارش خود تخفیف دریافت کنید.
+          <a href="profile.html" class="text-white">ثبت نام کنید!</a>
+        </div>
+        <div class="px-2 text-white pointer-cursor signup-dismiss">
+          <span class=""><i class="bi bi-x-lg"></i></span>
+        </div>
+      </div>
+
+      <header class="container main-header py-3">
+        <div class="d-flex align-items-center">
+          <div class="d-flex h-100 align-items-center">
+            <button
+              class="btn mx-1 text-black fs-5 open-menu d-block d-md-none"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <a href="#" class="text-black fw-bold text-decoration-none fs-3"
+              >SHOP.IR</a
+            >
+            <div class="mobile-menu position-absolute w-100">
+              <div
+                class="main-mobile-menu w-75 bg-white h-100 p-3 rounded-start-3 shadow-lg border border-3"
+              >
+                <div class="w-100 d-flex align-items-center">
+                  <div class="flex-grow-1">منو</div>
+                  <div>
+                    <button class="btn fw-bold close-menu">
+                      <i class="bi bi-x-lg text-white fs-4"></i>
+                    </button>
+                  </div>
+                </div>
+                <hr />
+                <ul class="p-0">
+                  <li class="mx-2 my-2">
+                    <a class="text-decoration-none text-black" href="#"
+                      >برند ها</a
+                    >
+                  </li>
+                  <li class="mx-2 my-2">
+                    <a class="text-decoration-none text-black" href="#"
+                      >تخفیف ویژه</a
+                    >
+                  </li>
+                  <li class="mx-2 my-2">
+                    <a class="text-decoration-none text-black" href="#"
+                      >محصولات جدید</a
+                    >
+                  </li>
+                  <li class="mx-2 my-2">
+                    <a
+                      class="text-decoration-none text-black shop-link"
+                      href="shop.html"
+                    >
+                      فروشگاه &nbsp;
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex-grow-1 mx-2">
+            <div class="row d-flex d-md-none">
+              <div class="col-11 mx-1">
+                <form action="" class="">
+                  <div
+                    class="search-form-main d-flex rounded-pill border border-1 p-2"
+                  >
+                    <input
+                      type="search"
+                      class="search-form position-relative border-0"
+                      placeholder="جست و جو کنید"
+                    />
+                    <button type="submit" class="btn">
+                      <i class="bi bi-search fs-5"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="row d-none d-md-flex">
+              <div class="col-7">
+                <form action="" class="d-inline w-100">
+                  <div class="d-flex rounded-pill search-form-main p-2">
+                    <i
+                      class="bi bi-search fs-5 text-secondary d-inline-block"
+                    ></i>
+                    <input
+                      type="search"
+                      class="search-input px-2"
+                      placeholder="جست و جو کنید"
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-5 d-flex align-items-center">
+                <ul class="header-menu-list">
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative"
+                      href="#"
+                      >برند ها</a
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative"
+                      href="#"
+                      >تخفیف ویژه</a
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative"
+                      href="#"
+                      >محصولات جدید</a
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative shop-link"
+                      href="shop.html"
+                    >
+                      فروشگاه &nbsp;
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <a
+              href="cart.html"
+              class="mx-2 fw-bolder text-decoration-none text-black fs-5"
+            >
+              <i class="bi bi-cart"></i>
+            </a>
+            <a
+              href="profile.html"
+              class="mx-2 fw-bolder text-decoration-none text-black fs-5"
+            >
+              <i class="bi bi-person-circle"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="hero w-100 py-4">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-md-5">
+              <h1 class="fw-bold">
+                لباس هایی را انتخاب کنید که به استایل شما کمک کند!
+              </h1>
+              <p class="text-secondary">
+                میان طیف گسترده ای از محصولات ما گشت و گذار کنید و لباس مورد
+                علاقه خودتان را نسبت به استایل و سلیقه خودتان انتخاب کنید. شما
+                برای مهم هستید
+              </p>
+              <a
+                class="btn main-btn text-white rounded-pill p-3 fs-6 text-decoration-none"
+                href="shop.html"
+                target="_blank"
+              >
+                نمایش محصولات
+              </a>
+              <div class="row mt-4">
+                <div
+                  class="col-4 border-start border-3 border-secondary-subtle"
+                >
+                  <h1 class="fw-bold">+200</h1>
+                  <p>محصول</p>
+                </div>
+                <div
+                  class="col-4 border-start border-3 border-secondary-subtle"
+                >
+                  <h1 class="fw-bold">+20</h1>
+                  <p>دسته بندی</p>
+                </div>
+                <div class="col-4">
+                  <h1 class="fw-bold">+1500</h1>
+                  <p>مشتری</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 hero-main-img h-100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="brand-menu py-4">
+        <div class="container">
+          <div class="row align-items-center fs-1 justify-content-center">
+            <div class="text-center col-6 col-md-3 my-2">
+              <a class="text-white text-decoration-none" href="#brand">BRAND</a>
+            </div>
+            <div class="text-center col-6 col-md-3 my-2">
+              <a class="text-white text-decoration-none" href="#brand">BRAND</a>
+            </div>
+            <div class="text-center col-6 col-md-3 my-2">
+              <a class="text-white text-decoration-none" href="#brand">BRAND</a>
+            </div>
+            <div class="text-center col-6 col-md-3 my-2">
+              <a class="text-white text-decoration-none" href="#brand">BRAND</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="container my-5">
+        <div class="w-100 text-center my-4">
+          <h1 class="fw-bolder">محصولات جدید</h1>
+        </div>
+        <div class="w-100 d-flex">
+          <div class="flex-grow-1">
+            <button
+              class="fw-bold btn fs-5 last-products-control btn-outline-primary rounded-circle d-flex align-items-center h-100"
+              type="button"
+              data-scroll="right"
+              data-row-target="last-products"
+            >
+              <i
+                class="bi bi-arrow-right"
+                data-scroll="right"
+                data-row-target="last-products"
+              ></i>
+            </button>
+          </div>
+          <div>
+            <button
+              class="fw-bold btn fs-5 last-products-control btn-outline-primary rounded-circle d-flex align-items-center h-100"
+              type="button"
+              data-scroll="left"
+              data-row-target="last-products"
+            >
+              <i
+                class="bi bi-arrow-left"
+                data-scroll="left"
+                data-row-target="last-products"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="row my-3 product-row overflow-x-hidden align-items-stretch last-products"
+        >
+          <div class="col-7 col-lg-3 my-3 last-pr-item">
+            <div class="product-container p-2 rounded-3">
+              <a href="product.html" class="text-black text-decoration-none">
+                <img
+                  loading="lazy"
+                  src="src/images/products/shirt-1.png"
+                  alt="product"
+                  class="w-100 rounded-4"
+                />
+                <h2 class="my-3">پیراهن مردانه آبی</h2>
+                <p>
+                  <span class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </span>
+                  <span class="text-secondary">5</span>/4.5
+                </p>
+                <div class="d-flex px-1">
+                  <div class="mx-1 fw-bold">360,000 تومان</div>
+                  <div class="mx-1">
+                    <strike>460,000 تومان</strike>
+                  </div>
+                  <div class="mx-1">
+                    <span class="bg-danger-subtle rounded-pill px-2 py-1"
+                      >20%</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-7 col-lg-3 my-3 last-pr-item">
+            <div class="product-container p-2 rounded-3">
+              <a href="product.html" class="text-black text-decoration-none">
+                <img
+                  loading="lazy"
+                  src="src/images/products/shirt-2.png"
+                  alt="product"
+                  class="w-100 rounded-4"
+                />
+                <h2 class="my-3">پیراهن مردانه قرمز</h2>
+                <p>
+                  <span class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="text-secondary">5</span>/5
+                </p>
+                <div class="d-flex px-1">
+                  <div class="mx-1 fw-bold">460,000 تومان</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-7 col-lg-3 my-3 last-pr-item">
+            <div class="product-container p-2 rounded-3">
+              <a href="product.html" class="text-black text-decoration-none">
+                <img
+                  loading="lazy"
+                  src="src/images/products/shirt-3.png"
+                  alt="product"
+                  class="w-100 rounded-4"
+                />
+                <h2 class="my-3">پیراهن مردانه آبی نفتی</h2>
+                <p>
+                  <span class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="text-secondary">5</span>/3
+                </p>
+                <div class="d-flex px-1">
+                  <div class="mx-1 fw-bold">960,000 تومان</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-7 col-lg-3 my-3 last-pr-item">
+            <div class="product-container p-2 rounded-3">
+              <a href="product.html" class="text-black text-decoration-none">
+                <img
+                  loading="lazy"
+                  src="src/images/products/shirt-4.png"
+                  alt="product"
+                  class="w-100 rounded-4"
+                />
+                <h2 class="my-3">پیراهن مردانه سفید</h2>
+                <p>
+                  <span class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="text-secondary">5</span>/4
+                </p>
+                <div class="d-flex px-1">
+                  <div class="mx-1 fw-bold">760,000 تومان</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 text-center my-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-3">
+              <a
+                href="shop.html"
+                class="btn py-2 px-5 rounded-pill border border-1 w-100"
+                >نمایش همه</a
+              >
+            </div>
+          </div>
+        </div>
+        <hr class="my-2" />
+
+        <div class="w-100 text-center my-4">
+          <h1 class="fw-bolder">محصولات پرفروش</h1>
+        </div>
+        <div class="w-100 d-flex">
+          <div class="flex-grow-1">
+            <button
+              class="fw-bold btn fs-5 last-products-control btn-outline-primary rounded-circle d-flex align-items-center h-100"
+              type="button"
+              data-scroll="right"
+              data-row-target="high-sell-products"
+            >
+              <i
+                class="bi bi-arrow-right"
+                data-scroll="right"
+                data-row-target="high-sell-products"
+              ></i>
+            </button>
+          </div>
+          <div>
+            <button
+              class="fw-bold btn fs-5 last-products-control btn-outline-primary rounded-circle d-flex align-items-center h-100"
+              type="button"
+              data-scroll="left"
+              data-row-target="high-sell-products"
+            >
+              <i
+                class="bi bi-arrow-left"
+                data-scroll="left"
+                data-row-target="high-sell-products"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="row my-3 product-row overflow-x-hidden align-items-stretch high-sell-products"
+        >
+          <div class="col-7 col-lg-3 my-3 last-pr-item">
+            <div class="product-container p-2 rounded-3">
+              <a href="product.html" class="text-black text-decoration-none">
+                <img
+                  loading="lazy"
+                  src="src/images/products/shirt-5.png"
+                  alt="product"
+                  class="w-100 rounded-4"
+                />
+                <h2 class="my-3">پیراهن مردانه آبی</h2>
+                <p>
+                  <span class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </span>
+                  <span class="text-secondary">5</span>/4.5
+                </p>
+                <div class="d-flex px-1">
+                  <div class="mx-1 fw-bold">210,000 تومان</div>
+                  <div class="mx-1">
+                    <strike>490,000 تومان</strike>
+                  </div>
+                  <div class="mx-1">
+                    <span class="bg-danger-subtle rounded-pill px-2 py-1"
+                      >20%</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-7 col-lg-3 my-3 last-pr-item">
+            <div class="product-container p-2 rounded-3">
+              <a href="product.html" class="text-black text-decoration-none">
+                <img
+                  loading="lazy"
+                  src="src/images/products/shirt-1.png"
+                  alt="product"
+                  class="w-100 rounded-4"
+                />
+                <h2 class="my-3">پیراهن مردانه آبی</h2>
+                <p>
+                  <span class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </span>
+                  <span class="text-secondary">5</span>/4.5
+                </p>
+                <div class="d-flex px-1">
+                  <div class="mx-1 fw-bold">360,000 تومان</div>
+                  <div class="mx-1">
+                    <strike>460,000 تومان</strike>
+                  </div>
+                  <div class="mx-1">
+                    <span class="bg-danger-subtle rounded-pill px-2 py-1"
+                      >20%</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-7 col-lg-3 my-3 last-pr-item">
+            <div class="product-container p-2 rounded-3">
+              <a href="product.html" class="text-black text-decoration-none">
+                <img
+                  loading="lazy"
+                  src="src/images/products/shirt-2.png"
+                  alt="product"
+                  class="w-100 rounded-4"
+                />
+                <h2 class="my-3">پیراهن مردانه قرمز</h2>
+                <p>
+                  <span class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="text-secondary">5</span>/5
+                </p>
+                <div class="d-flex px-1">
+                  <div class="mx-1 fw-bold">460,000 تومان</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-7 col-lg-3 my-3 last-pr-item">
+            <div class="product-container p-2 rounded-3">
+              <a href="product.html" class="text-black text-decoration-none">
+                <img
+                  loading="lazy"
+                  src="src/images/products/shirt-3.png"
+                  alt="product"
+                  class="w-100 rounded-4"
+                />
+                <h2 class="my-3">پیراهن مردانه آبی نفتی</h2>
+                <p>
+                  <span class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="text-secondary">5</span>/3
+                </p>
+                <div class="d-flex px-1">
+                  <div class="mx-1 fw-bold">960,000 تومان</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-7 col-lg-3 my-3 last-pr-item">
+            <div class="product-container p-2 rounded-3">
+              <a href="product.html" class="text-black text-decoration-none">
+                <img
+                  loading="lazy"
+                  src="src/images/products/shirt-4.png"
+                  alt="product"
+                  class="w-100 rounded-4"
+                />
+                <h2 class="my-3">پیراهن مردانه سفید</h2>
+                <p>
+                  <span class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="text-secondary">5</span>/4
+                </p>
+                <div class="d-flex px-1">
+                  <div class="mx-1 fw-bold">760,000 تومان</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 text-center my-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-3">
+              <a
+                href="shop.html"
+                class="btn py-2 px-5 rounded-pill border border-1 w-100"
+                >نمایش همه</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-3 rounded-4 browse-container px-5 py-3">
+          <div class="w-100 text-center my-4">
+            <h1 class="fw-bolder">انتخاب بر حسب دسته بندی</h1>
+          </div>
+          <div class="col-md-3 p-3">
+            <a href="shop.html" class="text-decoration-none">
+              <div class="browse-clothes casual p-2 px-4 rounded-3 text-white">
+                <h1>روزمره</h1>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-9 p-3">
+            <a href="shop.html" class="text-decoration-none">
+              <div class="browse-clothes formal p-2 px-4 rounded-3 text-white">
+                <h1>رسمی</h1>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-9 p-3">
+            <a href="shop.html" class="text-decoration-none">
+              <div class="browse-clothes party p-2 px-4 rounded-3 text-dark">
+                <h1>مجلسی</h1>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 p-3">
+            <a href="shop.html" class="text-decoration-none">
+              <div class="browse-clothes gym p-2 px-4 rounded-3 text-dark">
+                <h1>ورزشی</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex w-100 my-5">
+          <div class="flex-grow-1">
+            <h1 class="fw-bold">نظرات مشتریان</h1>
+          </div>
+          <div class="fw-bold fs-4">
+            <button
+              class="fw-bold btn fs-5 testimonial-control"
+              type="button"
+              data-scroll="right"
+            >
+              <i class="bi bi-arrow-right" data-scroll="right"></i>
+            </button>
+            <button
+              class="fw-bold btn fs-5 testimonial-control"
+              type="button"
+              data-scroll="left"
+            >
+              <i class="bi bi-arrow-left" data-scroll="left"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="row align-items-stretch customer-testimonial">
+          <div class="col-md-4 my-3">
+            <div class="user-comment p-4 rounded-3 border border-1 bg-white">
+              <h1 class="text-warning fs-5">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </h1>
+              <h1 class="fw-bold fs-4 my-3">
+                رضا مرادی.
+                <i class="fs-5 bi bi-check-circle-fill text-success"></i>
+              </h1>
+              <p>
+                از خرید های خودم بسیار خرسندم.این مجموعه با کیفیت ترین لباس ها
+                از برترین برند های بازار رو با برترین قیمت به فروش میرسونن.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="user-comment p-4 rounded-3 border border-1 bg-white">
+              <h1 class="text-warning fs-5">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </h1>
+              <h1 class="fw-bold fs-4 my-3">
+                لیلا فکری.
+                <i class="fs-5 bi bi-check-circle-fill text-success"></i>
+              </h1>
+              <p>
+                از خرید های خودم بسیار خرسندم.این مجموعه با کیفیت ترین لباس ها
+                از برترین برند های بازار رو با برترین قیمت به فروش میرسونن.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="user-comment p-4 rounded-3 border border-1 bg-white">
+              <h1 class="text-warning fs-5">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </h1>
+              <h1 class="fw-bold fs-4 my-3">
+                کیان اکبری.
+                <i class="fs-5 bi bi-check-circle-fill text-success"></i>
+              </h1>
+              <p>
+                از خرید های خودم بسیار خرسندم.این مجموعه با کیفیت ترین لباس ها
+                از برترین برند های بازار رو با برترین قیمت به فروش میرسونن.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="user-comment p-4 rounded-3 border border-1 bg-white">
+              <h1 class="text-warning fs-5">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </h1>
+              <h1 class="fw-bold fs-4 my-3">
+                مرتضی محمدی.
+                <i class="fs-5 bi bi-check-circle-fill text-success"></i>
+              </h1>
+              <p>
+                از خرید های خودم بسیار خرسندم.این مجموعه با کیفیت ترین لباس ها
+                از برترین برند های بازار رو با برترین قیمت به فروش میرسونن.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="user-comment p-4 rounded-3 border border-1 bg-white">
+              <h1 class="text-warning fs-5">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </h1>
+              <h1 class="fw-bold fs-4 my-3">
+                سارا نجاتی.
+                <i class="fs-5 bi bi-check-circle-fill text-success"></i>
+              </h1>
+              <p>
+                از خرید های خودم بسیار خرسندم.این مجموعه با کیفیت ترین لباس ها
+                از برترین برند های بازار رو با برترین قیمت به فروش میرسونن.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="user-comment p-4 rounded-3 border border-1 bg-white">
+              <h1 class="text-warning fs-5">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </h1>
+              <h1 class="fw-bold fs-4 my-3">
+                لیلا جعفری.
+                <i class="fs-5 bi bi-check-circle-fill text-success"></i>
+              </h1>
+              <p>
+                از خرید های خودم بسیار خرسندم.این مجموعه با کیفیت ترین لباس ها
+                از برترین برند های بازار رو با برترین قیمت به فروش میرسونن.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="newsletter px-3">
+        <div class="container px-3 py-4 rounded-4">
+          <div class="row">
+            <div class="flex-grow-1 col-md-8 my-3">
+              <h1 class="text-white">
+                از آخرین پیشنهادات و تخفیفات خبردار شوید.
+              </h1>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="w-100 my-2">
+                <input
+                  type="email"
+                  class="form-control rounded-pill px-5 py-2"
+                  placeholder="آدرس ایمیل خود را وارد کنید"
+                />
+              </div>
+              <div class="w-100 my-100">
+                <button class="btn bg-white rounded-pill px-5 w-100 py-2">
+                  عضو خبرنامه شوید
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="py-5">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="my-2 col-12 col-md-4">
+              <a href="#" class="text-black fw-bold text-decoration-none fs-3"
+                >SHOP.IR</a
+              >
+              <p class="text-secondary mb-3">
+                ما لباس هایی داریم که استایل تازه ای به شما میبخشه و شما به
+                خودتون و خریدتون افتخار میکنید. از زنانه تا مردانه.
+              </p>
+              <div class="social d-flex mt-5">
+                <a
+                  href="https://sirmerdas.ir"
+                  target="_blank"
+                  class="social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-globe"></i
+                ></a>
+                <a
+                  href="https://github.com/sirmerdas"
+                  target="_blank"
+                  class="mx-2 social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a
+                  href="https://t.me/sirmerdas"
+                  target="_blank"
+                  class="mx-2 social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-telegram"></i
+                ></a>
+                <a
+                  href="https://instagram.com/sirmerdas"
+                  target="_blank"
+                  class="mx-2 social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">شرکت</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >درباره ما</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >امکانات</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >شغلی ها</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >تماس با ما</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">راهنمایی</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    پشتیبانی فروش
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    نحوه ارسال
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    شرایط و مقررات
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    قوانین
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">سوالات</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    حساب کاربری
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    مدیریت ارسال ها
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    سفارشات
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    پرداخت ها
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">منابع</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    وبلاگ
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    مشاوره رایگان
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    کانال یوتیوب
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    نحوه دوخت
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <hr class="my-3" />
+            <div class="d-flex justify-content-center text-secondary">
+              <div>&nbsp;SHOP.IR&nbsp;</div>
+              <div>&copy; 2022-2023 تمامی حقوق محفوظ است.</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="src/Js/utils/popper.min.js"></script>
+  <script src="src/Js/utils/bootstrap.min.js"></script>
+  <script src="src/Js/utils/bootstrap.bundle.min.js"></script>
+  <script src="src/Js/app.js"></script>
+  <script type="module" src="src/Js/main.js"></script>
+</html>

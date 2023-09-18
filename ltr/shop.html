@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce shop | Shop</title>
+
+    <style>
+      .main-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #f0f0f0;
+        height: 100%;
+        z-index: 999;
+      }
+      .loader {
+        width: 150px;
+        height: 150px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #0b0909;
+        border-left: 10px solid #0b0909;
+        border-radius: 50%;
+        animation: loaderSpin 1s ease infinite;
+      }
+      @keyframes loaderSpin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/bootstrap.min.css" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="src/styles/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="src/styles/nouislider.min.css" />
+  </head>
+  <body>
+    <div class="main-preloader">
+      <div class="loader"></div>
+    </div>
+    <div class="shop-bg-filter w-100 position-fixed top-0"></div>
+    <div class="container-fluid p-0">
+      <div class="header-notice w-100 d-flex py-2 fs-6 position-relative">
+        <div class="text-center flex-grow-1">
+          Sign up and get up to 30% off.
+          <a href="profile.html" class="text-white">Sign up!</a>
+        </div>
+        <div class="px-2 text-white pointer-cursor signup-dismiss">
+          <span class=""><i class="bi bi-x-lg"></i></span>
+        </div>
+      </div>
+
+      <header class="container main-header py-3">
+        <div class="d-flex align-items-center">
+          <div class="d-flex h-100 align-items-center">
+            <button
+              class="btn mx-1 text-black fs-5 open-menu d-block d-md-none"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <a href="#" class="text-black fw-bold text-decoration-none fs-3"
+              >SHOP.COM</a
+            >
+            <div class="mobile-menu position-absolute w-100">
+              <div
+                class="main-mobile-menu w-75 bg-white h-100 p-3 rounded-end-3 shadow-lg border border-3"
+              >
+                <div class="w-100 d-flex align-items-center">
+                  <div class="flex-grow-1">Menu</div>
+                  <div>
+                    <button class="btn fw-bold close-menu">
+                      <i class="bi bi-x-lg text-white fs-4"></i>
+                    </button>
+                  </div>
+                </div>
+                <hr />
+                <ul class="p-0">
+                  <li class="mx-2 my-2">
+                    <a class="text-decoration-none text-black" href="#"
+                      >Brands</a
+                    >
+                  </li>
+                  <li class="mx-2 my-2">
+                    <a class="text-decoration-none text-black" href="#"
+                      >Discounts</a
+                    >
+                  </li>
+                  <li class="mx-2 my-2">
+                    <a class="text-decoration-none text-black" href="#"
+                      >New products</a
+                    >
+                  </li>
+                  <li class="mx-2 my-2">
+                    <a
+                      class="text-decoration-none text-black shop-link"
+                      href="shop.html"
+                    >
+                      Shop &nbsp;
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex-grow-1 mx-2">
+            <div class="row d-flex d-md-none">
+              <div class="col-11 mx-1">
+                <form action="" class="">
+                  <div
+                    class="search-form-main d-flex rounded-pill border border-1 p-2"
+                  >
+                    <input
+                      type="search"
+                      class="search-form position-relative border-0"
+                      placeholder="Search..."
+                    />
+                    <button type="submit" class="btn">
+                      <i class="bi bi-search fs-5"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="row d-none d-md-flex">
+              <div class="col-7">
+                <form action="" class="d-inline w-100">
+                  <div class="d-flex rounded-pill search-form-main p-2">
+                    <i
+                      class="bi bi-search fs-5 text-secondary d-inline-block"
+                    ></i>
+                    <input
+                      type="search"
+                      class="search-input px-2"
+                      placeholder="Search..."
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-5 d-flex align-items-center">
+                <ul class="header-menu-list">
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative"
+                      href="#"
+                      >Brands</a
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative"
+                      href="#"
+                      >Discounts</a
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative"
+                      href="#"
+                      >New products</a
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative shop-link"
+                      href="shop.html"
+                    >
+                      Shop &nbsp;
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <a
+              href="cart.html"
+              class="mx-2 fw-bolder text-decoration-none text-black fs-5"
+            >
+              <i class="bi bi-cart"></i>
+            </a>
+            <a
+              href="profile.html"
+              class="mx-2 fw-bolder text-decoration-none text-black fs-5"
+            >
+              <i class="bi bi-person-circle"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section class="container mb-5">
+        <hr />
+
+        <div class="breadcrumb">
+          <p class="fs-6">
+            <span
+              ><a href="#" class="text-decoration-none text-secondary"
+                >Home</a
+              ></span
+            ><span>&nbsp; <i class="bi bi-chevron-right"></i> &nbsp;</span
+            ><span>Shop</span>
+          </p>
+        </div>
+
+        <div class="shop-container">
+          <div class="row">
+            <div
+              class="col-12 rounded-4 col-lg-4 d-lg-block filter-menu-container overflow-y-auto"
+            >
+              <div
+                class="shop-filter border border-1 px-4 py-2 rounded-4 bg-white"
+              >
+                <div class="d-flex align-items-center py-2 border-bottom my-3">
+                  <div class="flex-grow-1">
+                    <h1 class="fs-5 fw-bold">Filter</h1>
+                  </div>
+                  <div>
+                    <i
+                      class="fs-5 bi bi-sliders2-vertical d-none d-lg-block"
+                    ></i>
+                    <button class="btn close-filter-mnu d-block d-lg-none">
+                      <i class="fs-5 bi bi-x-lg close-filter-mnu"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="category my-3 py-2 border-bottom">
+                  <div
+                    class="d-flex text-secondary pointer-cursor my-3 hover p-2 rounded-2"
+                  >
+                    <div class="flex-grow-1">Shirt</div>
+                    <div><i class="bi bi-chevron-right"></i></div>
+                  </div>
+                  <div
+                    class="d-flex text-secondary pointer-cursor my-3 hover p-2 rounded-2"
+                  >
+                    <div class="flex-grow-1">Pants</div>
+                    <div><i class="bi bi-chevron-right"></i></div>
+                  </div>
+                  <div
+                    class="d-flex text-secondary pointer-cursor my-3 hover p-2 rounded-2"
+                  >
+                    <div class="flex-grow-1">Shoe</div>
+                    <div><i class="bi bi-chevron-right"></i></div>
+                  </div>
+                  <div
+                    class="d-flex text-secondary pointer-cursor my-3 hover p-2 rounded-2"
+                  >
+                    <div class="flex-grow-1">Vest</div>
+                    <div><i class="bi bi-chevron-right"></i></div>
+                  </div>
+                </div>
+                <div
+                  class="price my-3 py-2 border-bottom overflow-hidden filter-menu-item"
+                >
+                  <div class="d-flex p-2 rounded-2 align-items-center">
+                    <div class="flex-grow-1">
+                      <h1 class="fs-5 fw-bold">Price</h1>
+                    </div>
+                    <div>
+                      <button
+                        class="btn main-btn text-white filter-control"
+                        data-filter-item="price"
+                      >
+                        <i
+                          class="fs-5 bi bi-chevron-down"
+                          data-filter-item="price"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="py-2 overflow-hidden px-4">
+                    <div id="slider" class="mt-5"></div>
+                  </div>
+                </div>
+                <div
+                  class="colors my-3 border-bottom py-2 overflow-hidden filter-menu-item"
+                >
+                  <div class="d-flex p-2 rounded-2 align-items-center">
+                    <div class="flex-grow-1">
+                      <h1 class="fs-5 fw-bold">Colors</h1>
+                    </div>
+                    <div>
+                      <button
+                        class="btn main-btn text-white filter-control"
+                        data-filter-item="colors"
+                      >
+                        <i
+                          class="fs-5 bi bi-chevron-down"
+                          data-filter-item="colors"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="py-2 overflow-hidden p-3">
+                    <div
+                      class="d-flex justify-content-center color-menu flex-wrap"
+                    >
+                      <div
+                        class="color-selector my-1 mx-1 bg-danger border border-1 border-secondary pointer-cursor"
+                      ></div>
+                      <div
+                        class="color-selector my-1 mx-1 bg-success border border-1 border-secondary pointer-cursor"
+                      ></div>
+                      <div
+                        class="color-selector my-1 mx-1 bg-warning border border-1 border-secondary pointer-cursor"
+                      ></div>
+                      <div
+                        class="color-selector my-1 mx-1 bg-info border border-1 border-secondary pointer-cursor"
+                      ></div>
+                      <div
+                        class="color-selector my-1 mx-1 bg-primary border border-1 border-secondary pointer-cursor"
+                      ></div>
+                      <div
+                        class="color-selector my-1 mx-1 bg-success-subtle border border-1 border-secondary pointer-cursor"
+                      ></div>
+                      <div
+                        class="color-selector my-1 mx-1 bg-dark border border-1 border-secondary pointer-cursor d-flex justify-content-center align-items-center"
+                      >
+                        <i class="bi bi-check fs-4 text-white"></i>
+                      </div>
+                      <div
+                        class="color-selector my-1 mx-1 bg-danger-subtle border border-1 border-secondary pointer-cursor"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="sizes my-3 py-2 border-bottom overflow-hidden filter-menu-item"
+                >
+                  <div class="d-flex p-2 rounded-2 align-items-center">
+                    <div class="flex-grow-1">
+                      <h1 class="fs-5 fw-bold">Size</h1>
+                    </div>
+                    <div>
+                      <button
+                        class="btn main-btn text-white filter-control"
+                        data-filter-item="sizes"
+                      >
+                        <i
+                          class="fs-5 bi bi-chevron-down"
+                          data-filter-item="sizes"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="py-2 overflow-hidden p-4 filter-active">
+                    <div class="d-flex flex-wrap size-menu">
+                      <button
+                        class="btn rounded-pill my-2 mx-2 bg-alternative text-secondary"
+                      >
+                        XX-Small
+                      </button>
+                      <button
+                        class="btn rounded-pill my-2 mx-2 bg-alternative text-secondary"
+                      >
+                        X-Small
+                      </button>
+                      <button
+                        class="btn rounded-pill my-2 mx-2 bg-alternative text-secondary"
+                      >
+                        Small
+                      </button>
+                      <button
+                        class="btn rounded-pill my-2 mx-2 bg-alternative text-secondary"
+                      >
+                        Medium
+                      </button>
+                      <button
+                        class="btn text-white main-btn rounded-pill my-2 mx-2 bg-alternative text-secondary"
+                      >
+                        Large
+                      </button>
+                      <button
+                        class="btn rounded-pill my-2 mx-2 bg-alternative text-secondary"
+                      >
+                        X-Large
+                      </button>
+                      <button
+                        class="btn rounded-pill my-2 mx-2 bg-alternative text-secondary"
+                      >
+                        XX-Large
+                      </button>
+                      <button
+                        class="btn rounded-pill my-2 mx-2 bg-alternative text-secondary"
+                      >
+                        3X-Large
+                      </button>
+                      <button
+                        class="btn rounded-pill my-2 mx-2 bg-alternative text-secondary"
+                      >
+                        4X-Large
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="clothes-type my-3 py-2 overflow-hidden filter-menu-item"
+                >
+                  <div class="d-flex p-2 rounded-2 align-items-center">
+                    <div class="flex-grow-1">
+                      <h1 class="fs-5 fw-bold">Clothe type</h1>
+                    </div>
+                    <div>
+                      <button
+                        class="btn main-btn text-white filter-control"
+                        data-filter-item="clothes-type"
+                      >
+                        <i
+                          class="fs-5 bi bi-chevron-down"
+                          data-filter-item="clothes-type"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="py-2 overflow-hidden p-4">
+                    <div class="d-flex w-100 size-menu">
+                      <div class="w-100 my-3 py-2 border-bottom style-menu">
+                        <div
+                          class="d-flex text-secondary pointer-cursor my-3 hover p-2 rounded-2"
+                        >
+                          <div class="flex-grow-1">Formal</div>
+                          <div><i class="bi bi-chevron-right"></i></div>
+                        </div>
+                        <div
+                          class="d-flex text-secondary pointer-cursor my-3 hover p-2 rounded-2"
+                        >
+                          <div class="flex-grow-1">Gym</div>
+                          <div><i class="bi bi-chevron-right"></i></div>
+                        </div>
+                        <div
+                          class="d-flex text-secondary pointer-cursor my-3 hover p-2 rounded-2"
+                        >
+                          <div class="flex-grow-1">Wedding</div>
+                          <div><i class="bi bi-chevron-right"></i></div>
+                        </div>
+                        <div
+                          class="d-flex text-secondary pointer-cursor my-3 hover p-2 rounded-2"
+                        >
+                          <div class="flex-grow-1">Casual</div>
+                          <div><i class="bi bi-chevron-right"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-100">
+                  <button
+                    class="btn main-btn rounded-pill px-4 py-2 text-white w-100"
+                  >
+                    Apply Filter
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8">
+              <div class="shop-header d-flex">
+                <div class="flex-grow-1 align-items-center">
+                  <h1 class="fs-5 fw-bold">Formal</h1>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="text-secondary">Showing 1-10 of 100 products</div>
+                  <div class="text-secondary mx-2 d-none d-lg-block">
+                    Sort by:
+                  </div>
+                  <div class="position-relative sort-menu d-none d-lg-block">
+                    <a class="text-decoration-none text-black pointer-cursor">
+                      Most Popular
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <div
+                      class="shadow bg-white d-block py-2 px-2 rounded-2 position-absolute"
+                    >
+                      <a
+                        href="#"
+                        class="d-block my-1 text-decoration-none text-black"
+                        >Cheapest</a
+                      >
+                      <a
+                        href="#"
+                        class="d-block my-1 text-decoration-none text-black"
+                        >Most sell</a
+                      >
+                      <a
+                        href="#"
+                        class="d-block my-1 text-decoration-none text-black"
+                        >High rated</a
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="toggle-filter-menu d-block d-lg-none mx-1 btn bg-alternative text-black rounded-circle d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="toggle-filter-menu bi bi-sliders2-vertical fs-6"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="shop-products py-2 border-bottom">
+                <div
+                  class="alert alert-danger d-none d-flex align-items-center"
+                  role="alert"
+                  id="noPr"
+                >
+                  <div class="mx-1">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                  </div>
+                  <div>No product found!</div>
+                </div>
+
+                <div class="row align-items-stretch">
+                  <div class="col-6 col-md-4 py-1 px-2 my-4">
+                    <div class="shop-item h-100">
+                      <div
+                        class="product-container bg-transparent h-100 p-2 rounded-3"
+                      >
+                        <a
+                          href="product.html"
+                          class="text-black text-decoration-none"
+                        >
+                          <img
+                            loading="lazy"
+                            loading="lazy"
+                            src="src/images/products/shirt-1.png"
+                            alt="product"
+                            class="w-100 rounded-4"
+                          />
+                          <h2 class="my-3">Blue men shirt</h2>
+                          <p>
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="text-secondary">4.5</span>/5
+                          </p>
+                          <div class="d-flex px-1">
+                            <div class="mx-1 fw-bold" data-item-type="price">
+                              $360
+                            </div>
+                            <div class="mx-1">
+                              <strike>$420</strike>
+                            </div>
+                            <div class="mx-1">
+                              <span
+                                class="bg-danger-subtle rounded-pill px-2 py-1"
+                                >20%</span
+                              >
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 py-1 px-2 my-4">
+                    <div class="shop-item h-100">
+                      <div
+                        class="product-container bg-transparent h-100 p-2 rounded-3"
+                      >
+                        <a
+                          href="product.html"
+                          class="text-black text-decoration-none"
+                        >
+                          <img
+                            loading="lazy"
+                            src="src/images/products/shirt-2.png"
+                            alt="product"
+                            class="w-100 rounded-4"
+                          />
+                          <h2 class="my-3">Red men shirt</h2>
+                          <p>
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="text-secondary">4.5</span>/5
+                          </p>
+                          <div class="d-flex px-1">
+                            <div class="mx-1 fw-bold" data-item-type="price">
+                              $500
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 py-1 px-2 my-4">
+                    <div class="shop-item h-100">
+                      <div
+                        class="product-container bg-transparent h-100 p-2 rounded-3"
+                      >
+                        <a
+                          href="product.html"
+                          class="text-black text-decoration-none"
+                        >
+                          <img
+                            loading="lazy"
+                            src="src/images/products/shirt-3.png"
+                            alt="product"
+                            class="w-100 rounded-4"
+                          />
+                          <h2 class="my-3">Midnight blue men shirt</h2>
+                          <p>
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="text-secondary">5</span>/5
+                          </p>
+                          <div class="d-flex px-1">
+                            <div class="mx-1 fw-bold" data-item-type="price">
+                              $300
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 py-1 px-2 my-4">
+                    <div class="shop-item h-100">
+                      <div
+                        class="product-container bg-transparent h-100 p-2 rounded-3"
+                      >
+                        <a
+                          href="product.html"
+                          class="text-black text-decoration-none"
+                        >
+                          <img
+                            loading="lazy"
+                            src="src/images/products/shirt-4.png"
+                            alt="product"
+                            class="w-100 rounded-4"
+                          />
+                          <h2 class="my-3">White men shirt</h2>
+                          <p>
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="text-secondary">4.5</span>/5
+                          </p>
+                          <div class="d-flex px-1">
+                            <div class="mx-1 fw-bold" data-item-type="price">
+                              $300
+                            </div>
+                            <div class="mx-1">
+                              <strike>$430</strike>
+                            </div>
+                            <div class="mx-1">
+                              <span
+                                class="bg-danger-subtle rounded-pill px-2 py-1"
+                                >30%</span
+                              >
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 py-1 px-2 my-4">
+                    <div class="shop-item h-100">
+                      <div
+                        class="product-container bg-transparent h-100 p-2 rounded-3"
+                      >
+                        <a
+                          href="product.html"
+                          class="text-black text-decoration-none"
+                        >
+                          <img
+                            loading="lazy"
+                            src="src/images/products/shirt-5.png"
+                            alt="product"
+                            class="w-100 rounded-4"
+                          />
+                          <h2 class="my-3">Light men shirt</h2>
+                          <p>
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star"></i>
+                              <i class="bi bi-star"></i>
+                            </span>
+                            <span class="text-secondary">3</span>/5
+                          </p>
+                          <div class="d-flex px-1">
+                            <div class="mx-1 fw-bold" data-item-type="price">
+                              $345
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 py-1 px-2 my-4">
+                    <div class="shop-item h-100">
+                      <div
+                        class="product-container bg-transparent h-100 p-2 rounded-3"
+                      >
+                        <a
+                          href="product.html"
+                          class="text-black text-decoration-none"
+                        >
+                          <img
+                            loading="lazy"
+                            src="src/images/products/shirt-6.png"
+                            alt="product"
+                            class="w-100 rounded-4"
+                          />
+                          <h2 class="my-3">Men shirt</h2>
+                          <p>
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="text-secondary">4.5</span>/5
+                          </p>
+                          <div class="d-flex px-1">
+                            <div class="mx-1 fw-bold" data-item-type="price">
+                              $400
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 py-1 px-2 my-4">
+                    <div class="shop-item h-100">
+                      <div
+                        class="product-container bg-transparent h-100 p-2 rounded-3"
+                      >
+                        <a
+                          href="product.html"
+                          class="text-black text-decoration-none"
+                        >
+                          <img
+                            loading="lazy"
+                            src="src/images/products/shirt-2.png"
+                            alt="product"
+                            class="w-100 rounded-4"
+                          />
+                          <h2 class="my-3">Red men shirt</h2>
+                          <p>
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="text-secondary">4.5</span>/5
+                          </p>
+                          <div class="d-flex px-1">
+                            <div class="mx-1 fw-bold" data-item-type="price">
+                              $420
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 py-1 px-2 my-4">
+                    <div class="shop-item h-100">
+                      <div
+                        class="product-container bg-transparent h-100 p-2 rounded-3"
+                      >
+                        <a
+                          href="product.html"
+                          class="text-black text-decoration-none"
+                        >
+                          <img
+                            loading="lazy"
+                            src="src/images/products/shirt-3.png"
+                            alt="product"
+                            class="w-100 rounded-4"
+                          />
+                          <h2 class="my-3">Midnight blue men shirt</h2>
+                          <p>
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="text-secondary">5</span>/5
+                          </p>
+                          <div class="d-flex px-1">
+                            <div class="mx-1 fw-bold" data-item-type="price">
+                              $329
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 py-1 px-2 my-4">
+                    <div class="shop-item h-100">
+                      <div
+                        class="product-container bg-transparent h-100 p-2 rounded-3"
+                      >
+                        <a
+                          href="product.html"
+                          class="text-black text-decoration-none"
+                        >
+                          <img
+                            loading="lazy"
+                            src="src/images/products/shirt-4.png"
+                            alt="product"
+                            class="w-100 rounded-4"
+                          />
+                          <h2 class="my-3">White men shirt</h2>
+                          <p>
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star"></i>
+                              <i class="bi bi-star"></i>
+                            </span>
+                            <span class="text-secondary">3</span>/5
+                          </p>
+                          <div class="d-flex px-1">
+                            <div class="mx-1 fw-bold" data-item-type="price">
+                              $150
+                            </div>
+                            <div class="mx-1">
+                              <strike>$360</strike>
+                            </div>
+                            <div class="mx-1">
+                              <span
+                                class="bg-danger-subtle rounded-pill px-2 py-1"
+                                >20%</span
+                              >
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop-footer d-flex justify-content-center my-2 py-3">
+                <div>
+                  <button class="btn border border-1 py-2 px-3">
+                    <i class="bi bi-arrow-right"></i>
+                    &nbsp;Previous
+                  </button>
+                </div>
+                <div class="flex-grow-1 text-center">
+                  <a
+                    href="#"
+                    class="text-decoration-none btn mx-1 py-1 px-3 bg-alternative"
+                    >1</a
+                  >
+                  <a
+                    href="#"
+                    class="text-decoration-none btn text-secondary mx-1 py-1 px-3"
+                    >2</a
+                  >
+                  <a
+                    href="#"
+                    class="text-decoration-none btn text-secondary mx-1 py-1 px-3"
+                    >3</a
+                  >
+                  <span class="mx-2">...</span>
+                  <a
+                    href="#"
+                    class="text-decoration-none btn text-secondary mx-1"
+                    >10</a
+                  >
+                  <a
+                    href="#"
+                    class="text-decoration-none btn text-secondary mx-1"
+                    >11</a
+                  >
+                  <a
+                    href="#"
+                    class="text-decoration-none btn text-secondary mx-1"
+                    >11</a
+                  >
+                </div>
+                <div>
+                  <button class="btn border border-1 py-2 px-3">
+                    Next
+                    <i class="bi bi-arrow-left"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="newsletter px-3">
+        <div class="container px-3 py-4 rounded-4">
+          <div class="row">
+            <div class="flex-grow-1 col-md-8 my-3">
+              <h1 class="text-white">Don't miss latest news.</h1>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="w-100 my-2">
+                <input
+                  type="email"
+                  class="form-control rounded-pill px-5 py-2"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div class="w-100 my-100">
+                <button class="btn bg-white rounded-pill px-5 w-100 py-2">
+                  Join newsletter
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="py-5">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="my-2 col-12 col-md-4">
+              <a href="#" class="text-black fw-bold text-decoration-none fs-3"
+                >SHOP.COM</a
+              >
+              <p class="text-secondary mb-3">
+                We have clothes that will give you a new style and you will be
+                proud of yourself and your purchase. From female to male.
+              </p>
+              <div class="social d-flex mt-5">
+                <a
+                  href="https://sirmerdas.ir"
+                  target="_blank"
+                  class="social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-globe"></i
+                ></a>
+                <a
+                  href="https://github.com/sirmerdas"
+                  target="_blank"
+                  class="mx-2 social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a
+                  href="https://t.me/sirmerdas"
+                  target="_blank"
+                  class="mx-2 social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-telegram"></i
+                ></a>
+                <a
+                  href="https://instagram.com/sirmerdas"
+                  target="_blank"
+                  class="mx-2 social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">Company</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >About us
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >Feature
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >Jobs</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">Help</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Call center
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Shipment methods
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Privacy
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Terms of use
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">FAQ</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Account
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Track orders
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Orders
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Payments
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">Resources</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Counseling
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    youtube channel
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Info
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <hr class="my-3" />
+            <div class="d-flex justify-content-center text-secondary">
+              All Rights Reserverd 2023 &copy;
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="src/Js/utils/popper.min.js"></script>
+  <script src="src/Js/utils/bootstrap.min.js"></script>
+  <script src="src/Js/utils/bootstrap.bundle.min.js"></script>
+  <script src="src/Js/utils/wNumb.min.js"></script>
+  <script src="src/Js/utils/nouislider.min.js"></script>
+  <script src="src/Js/app.js"></script>
+  <script src="src/Js/shop.js"></script>
+</html>

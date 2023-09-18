@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce shop | Account</title>
+
+    <style>
+      .main-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #f0f0f0;
+        height: 100%;
+        z-index: 999;
+      }
+      .loader {
+        width: 150px;
+        height: 150px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #0b0909;
+        border-left: 10px solid #0b0909;
+        border-radius: 50%;
+        animation: loaderSpin 1s ease infinite;
+      }
+      @keyframes loaderSpin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/bootstrap.min.css" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="src/styles/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <div class="main-preloader">
+      <div class="loader"></div>
+    </div>
+
+    <div class="container-fluid p-0">
+      <div class="header-notice w-100 d-flex py-2 fs-6 position-relative">
+        <div class="text-center flex-grow-1">
+          Sign up and get up to 30% off.
+          <a href="profile.html" class="text-white">Sign up!</a>
+        </div>
+        <div class="px-2 text-white pointer-cursor signup-dismiss">
+          <span class=""><i class="bi bi-x-lg"></i></span>
+        </div>
+      </div>
+
+      <header class="container main-header py-3">
+        <div class="d-flex align-items-center">
+          <div class="d-flex h-100 align-items-center">
+            <button
+              class="btn mx-1 text-black fs-5 open-menu d-block d-md-none"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <a href="#" class="text-black fw-bold text-decoration-none fs-3"
+              >SHOP.COM</a
+            >
+            <div class="mobile-menu position-absolute w-100">
+              <div
+                class="main-mobile-menu w-75 bg-white h-100 p-3 rounded-end-3 shadow-lg border border-3"
+              >
+                <div class="w-100 d-flex align-items-center">
+                  <div class="flex-grow-1">Menu</div>
+                  <div>
+                    <button class="btn fw-bold close-menu">
+                      <i class="bi bi-x-lg text-white fs-4"></i>
+                    </button>
+                  </div>
+                </div>
+                <hr />
+                <ul class="p-0">
+                  <li class="mx-2 my-2">
+                    <a class="text-decoration-none text-black" href="#"
+                      >Brands</a
+                    >
+                  </li>
+                  <li class="mx-2 my-2">
+                    <a class="text-decoration-none text-black" href="#"
+                      >Discounts</a
+                    >
+                  </li>
+                  <li class="mx-2 my-2">
+                    <a class="text-decoration-none text-black" href="#"
+                      >New products</a
+                    >
+                  </li>
+                  <li class="mx-2 my-2">
+                    <a
+                      class="text-decoration-none text-black shop-link"
+                      href="shop.html"
+                    >
+                      Shop &nbsp;
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex-grow-1 mx-2">
+            <div class="row d-flex d-md-none">
+              <div class="col-11 mx-1">
+                <form action="" class="">
+                  <div
+                    class="search-form-main d-flex rounded-pill border border-1 p-2"
+                  >
+                    <input
+                      type="search"
+                      class="search-form position-relative border-0"
+                      placeholder="Search..."
+                    />
+                    <button type="submit" class="btn">
+                      <i class="bi bi-search fs-5"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="row d-none d-md-flex">
+              <div class="col-7">
+                <form action="" class="d-inline w-100">
+                  <div class="d-flex rounded-pill search-form-main p-2">
+                    <i
+                      class="bi bi-search fs-5 text-secondary d-inline-block"
+                    ></i>
+                    <input
+                      type="search"
+                      class="search-input px-2"
+                      placeholder="Search..."
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-5 d-flex align-items-center">
+                <ul class="header-menu-list">
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative"
+                      href="#"
+                      >Brands</a
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative"
+                      href="#"
+                      >Discounts</a
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative"
+                      href="#"
+                      >New products</a
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <a
+                      class="text-decoration-none text-black main-menu-link position-relative shop-link"
+                      href="shop.html"
+                    >
+                      Shop &nbsp;
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <a
+              href="cart.html"
+              class="mx-2 fw-bolder text-decoration-none text-black fs-5"
+            >
+              <i class="bi bi-cart"></i>
+            </a>
+            <a
+              href="profile.html"
+              class="mx-2 fw-bolder text-decoration-none text-black fs-5"
+            >
+              <i class="bi bi-person-circle"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section class="container mb-5">
+        <hr />
+
+        <div class="breadcrumb">
+          <p class="fs-6">
+            <span
+              ><a href="#" class="text-decoration-none text-secondary"
+                >Home</a
+              ></span
+            ><span>&nbsp; <i class="bi bi-chevron-left"></i> &nbsp;</span
+            ><span>Account</span>
+          </p>
+        </div>
+
+        <div class="account">
+          <div class="row">
+            <div class="create-acc col-md-6 my-2">
+              <div class="rounded-4 border border-1 py-3 px-4">
+                <div>
+                  <h1 class="fs-4 fw-bold text-center">Create account</h1>
+                  <hr />
+                </div>
+                <div>
+                  <form action="" method="get">
+                    <div class="my-2">
+                      <label for="fname" class="my-2"
+                        >Enter your firstName:
+                      </label>
+                      <input
+                        class="main-input px-3 py-2 rounded-3"
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="my-2">
+                      <label for="lname" class="my-2">
+                        Enter your lastName:
+                      </label>
+                      <input
+                        class="main-input px-3 py-2 rounded-3"
+                        type="text"
+                        id="lname"
+                        name="lname"
+                        placeholder="lastName"
+                      />
+                    </div>
+                    <div class="my-2">
+                      <label for="email" class="my-2">Enter your email:</label>
+                      <input
+                        class="main-input px-3 py-2 rounded-3"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="email"
+                      />
+                    </div>
+                    <div class="my-2">
+                      <label for="pass" class="my-2">
+                        Enter your password:
+                      </label>
+                      <input
+                        class="main-input px-3 py-2 rounded-3"
+                        type="password"
+                        id="pass"
+                        name="pass"
+                        placeholder="password"
+                      />
+                    </div>
+                    <div class="my-4">
+                      <button class="btn main-btn text-white w-100">
+                        Sign up
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="login-acc col-md-6 my-2">
+              <div class="rounded-4 border border-1 py-3 px-4">
+                <div>
+                  <h1 class="fs-4 fw-bold text-center">
+                    Login to your account
+                  </h1>
+                  <hr />
+                </div>
+                <div>
+                  <form action="" method="get">
+                    <div class="my-2">
+                      <label for="email" class="my-2">
+                        Enter your email:
+                      </label>
+                      <input
+                        class="main-input px-3 py-2 rounded-3"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="email"
+                      />
+                    </div>
+                    <div class="my-2">
+                      <label for="pass" class="my-2">
+                        Enter your password:
+                      </label>
+                      <input
+                        class="main-input px-3 py-2 rounded-3"
+                        type="password"
+                        id="pass"
+                        name="pass"
+                        placeholder="password"
+                      />
+                    </div>
+                    <div class="my-4">
+                      <button class="btn main-btn text-white w-100">
+                        Login
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="newsletter px-3">
+        <div class="container px-3 py-4 rounded-4">
+          <div class="row">
+            <div class="flex-grow-1 col-md-8 my-3">
+              <h1 class="text-white">Don't miss latest news.</h1>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="w-100 my-2">
+                <input
+                  type="email"
+                  class="form-control rounded-pill px-5 py-2"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div class="w-100 my-100">
+                <button class="btn bg-white rounded-pill px-5 w-100 py-2">
+                  Join newsletter
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="py-5">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="my-2 col-12 col-md-4">
+              <a href="#" class="text-black fw-bold text-decoration-none fs-3"
+                >SHOP.COM</a
+              >
+              <p class="text-secondary mb-3">
+                We have clothes that will give you a new style and you will be
+                proud of yourself and your purchase. From female to male.
+              </p>
+              <div class="social d-flex mt-5">
+                <a
+                  href="https://sirmerdas.ir"
+                  target="_blank"
+                  class="social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-globe"></i
+                ></a>
+                <a
+                  href="https://github.com/sirmerdas"
+                  target="_blank"
+                  class="mx-2 social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a
+                  href="https://t.me/sirmerdas"
+                  target="_blank"
+                  class="mx-2 social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-telegram"></i
+                ></a>
+                <a
+                  href="https://instagram.com/sirmerdas"
+                  target="_blank"
+                  class="mx-2 social-icon d-flex text-black bg-white rounded-circle justify-content-center align-items-center fs-5"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">Company</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >About us
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >Feature
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >Jobs</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">Help</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Call center
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Shipment methods
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Privacy
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Terms of use
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">FAQ</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Account
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Track orders
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Orders
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Payments
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links my-2 col-6 col-md-2">
+              <h1 class="fs-3 mb-3">Resources</h1>
+              <ul class="list-unstyled p-0">
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Counseling
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    youtube channel
+                  </a>
+                </li>
+                <li class="my-2">
+                  <a
+                    class="text-secondary text-decoration-none"
+                    href="shop.html"
+                  >
+                    Info
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <hr class="my-3" />
+            <div class="d-flex justify-content-center text-secondary">
+              All Rights Reserverd 2023 &copy;
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="src/Js/utils/popper.min.js"></script>
+  <script src="src/Js/utils/bootstrap.min.js"></script>
+  <script src="src/Js/utils/bootstrap.bundle.min.js"></script>
+  <script src="src/Js/app.js"></script>
+</html>

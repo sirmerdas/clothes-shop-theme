@@ -4,7 +4,7 @@
    </a>
 </h1>
 
-![GITHUB LICENSE](https://img.shields.io/github/license/sirmerdas/clothes-shop-theme) ![GITHUB version](https://img.shields.io/github/v/release/sirmerdas/clothes-shop-theme)
+![LICENSE](https://img.shields.io/github/license/sirmerdas/clothes-shop-theme) ![Version](https://img.shields.io/github/v/release/sirmerdas/clothes-shop-theme)
 
 # Introduction :dizzy:
 
